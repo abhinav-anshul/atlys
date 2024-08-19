@@ -1,51 +1,18 @@
-# React + TypeScript + Vite
+# Atlys Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an Atlys assignment.
 
-Currently, two official plugins are available:
+Tech Stack used - Vite + TypeScript + React + Wouter + Tailwind
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Decisons Taken
+- Vite : Small library with efficient bundling, better in terms of performance when compared to webpack/create-react-app.
+- TypeScript : Goes well with modern-day JS development, good for catching errors even for smaller projects.
+- React : Project
+- Wouter : This is a tiny ~2kb alternative to `react-router`. Although, `react-router` is much more powerful, `wouter` is perfect for smaller projects of this size.
+- Tailwind : Best for Quick prototyping to full-scale frontend projects, saves time on classname with near zero compile time in prod.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# atlys
+## About the Project
+- It has roughly 3 routes
+    - `/dashboard` : This is the feed dashboard from the figma design that consists of `CreatePost` and `Post` component.
+    - `/login` : This will render the page with `login` component.
+    - `/signup` : This will render the page with `signup` component.
