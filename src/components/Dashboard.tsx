@@ -8,6 +8,8 @@ interface IDetail {
   timeStamp: string
   mood: string
   post: string
+  profile_picture: string
+  comments_number: number
 }
 
 function Dashboard() {
@@ -30,10 +32,13 @@ function Dashboard() {
               timeStamp={itm?.timeStamp}
               mood={itm?.mood}
               post={itm?.post}
+              profile_picture={itm?.profile_picture}
+              comments_number={itm?.comments_number}
             />
           </Fragment>
         ))}
       </div>
+      <Spacer x={0} y={6} />
     </main>
   )
 }

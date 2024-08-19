@@ -5,6 +5,8 @@ const USER_DETAIL = [
     timeStamp: "5 mins ago",
     mood: "🖐",
     post: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    profile_picture: "https://avatar.iran.liara.run/public",
+    comments_number: 5,
   },
   {
     id: 1,
@@ -12,6 +14,8 @@ const USER_DETAIL = [
     timeStamp: "10 mins ago",
     mood: "😊",
     post: "Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    profile_picture: "https://avatar.iran.liara.run/public/boy",
+    comments_number: 3,
   },
   {
     id: 2,
@@ -19,6 +23,8 @@ const USER_DETAIL = [
     timeStamp: "30 mins ago",
     mood: "💤",
     post: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    profile_picture: "https://avatar.iran.liara.run/public",
+    comments_number: 8,
   },
   {
     id: 3,
@@ -26,6 +32,8 @@ const USER_DETAIL = [
     timeStamp: "1 hour ago",
     mood: "🎉",
     post: "Culpa qui officia deserunt mollit anim id est laborum. Exercitation veniam consequat sunt nostrud amet.",
+    profile_picture: "https://avatar.iran.liara.run/public/girl",
+    comments_number: 2,
   },
   {
     id: 4,
@@ -33,6 +41,8 @@ const USER_DETAIL = [
     timeStamp: "2 hours ago",
     mood: "😎",
     post: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    profile_picture: "https://avatar.iran.liara.run/public/job/designer/male",
+    comments_number: 10,
   },
   {
     id: 5,
@@ -40,6 +50,8 @@ const USER_DETAIL = [
     timeStamp: "3 hours ago",
     mood: "🤔",
     post: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    profile_picture: "https://avatar.iran.liara.run/public/job/lawyer/male",
+    comments_number: 1,
   },
 ]
 

@@ -3,21 +3,23 @@ import { Modal } from "../components/Modal"
 import { ModalForm } from "../components/ModalForm"
 
 interface IPosts {
-  id: number // Should be a number, not a string
+  id: number
   name: string
-  timeStamp: string // Should be a string, not a number
+  timeStamp: string
   mood: string
   post: string
+  profile_picture: string
+  comments_number: number
 }
 
-function Posts({ id, name, timeStamp, mood, post }: IPosts) {
+function Posts({ id, name, timeStamp, mood, post, profile_picture, comments_number }: IPosts) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const handleCommentClick = () => {
     setIsOpen(true)
   }
 
-  console.log(id, name, timeStamp, mood, post)
+  console.log(id, name, timeStamp, mood, post, profile_picture, comments_number)
 
   return (
     <>
@@ -28,12 +30,7 @@ function Posts({ id, name, timeStamp, mood, post }: IPosts) {
               <div className="flex justify-between">
                 <div className="flex items-center space-x-2">
                   <div>
-                    <img
-                      width={44}
-                      height={44}
-                      className="rounded-full"
-                      src="./profile-pic-1.png"
-                    />
+                    <img width={44} height={44} className="rounded-full" src={profile_picture} />
                   </div>
                   <div>
                     <div>{name}</div>
@@ -60,7 +57,7 @@ function Posts({ id, name, timeStamp, mood, post }: IPosts) {
                   onClick={handleCommentClick}
                   className="text-[#7F8084] text-[14px] font-[500] cursor-pointer"
                 >
-                  24 comments
+                  {comments_number} comments
                 </div>
               </div>
             </div>
