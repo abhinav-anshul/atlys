@@ -8,7 +8,10 @@ This is an Atlys assignment.
 
 ## Complete Walkthrough - please follow the video
 
-Uploading Screen Recording 2024-08-19 at 5.36.33 PM.mov…
+
+https://github.com/user-attachments/assets/3bc5526f-8f6a-4392-a0e1-b58dab5a9b85
+
+
 
 
 
