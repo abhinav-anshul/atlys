@@ -66,10 +66,10 @@ function ModalForm({ modalType }: IModalType) {
             <div className="space-y-4">
               <div className="space-y-2">
                 <div className="text-center text-[#6B6C70] uppercase text-[14px] font-[500]">
-                  WELCOME BACK
+                  SIGN UP
                 </div>
                 <div className="text-center text-[#FFFFFF] text-[18px] font-[500]">
-                  Log into your account
+                  Create an account to continue
                 </div>
               </div>
               <div>

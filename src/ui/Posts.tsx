@@ -2,12 +2,22 @@ import { useState } from "react"
 import { Modal } from "../components/Modal"
 import { ModalForm } from "../components/ModalForm"
 
-function Posts() {
+interface IPosts {
+  id: number // Should be a number, not a string
+  name: string
+  timeStamp: string // Should be a string, not a number
+  mood: string
+  post: string
+}
+
+function Posts({ id, name, timeStamp, mood, post }: IPosts) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const handleCommentClick = () => {
     setIsOpen(true)
   }
+
+  console.log(id, name, timeStamp, mood, post)
 
   return (
     <>
@@ -26,18 +36,18 @@ function Posts() {
                     />
                   </div>
                   <div>
-                    <div>Theresa Webb</div>
-                    <div className="text-[#7F8084] text-[14px] font-[500]">5mins ago</div>
+                    <div>{name}</div>
+                    <div className="text-[#7F8084] text-[14px] font-[500]">{timeStamp}</div>
                   </div>
                 </div>
                 <div className="cursor-pointer">⋯</div>
               </div>
             </div>
             <div className="flex items-center space-x-2 bg-[#191920] p-4 rounded-md">
-              <div className="bg-[#27292D] px-3 py-2 rounded-full">🖐</div>
+              <div className="bg-[#27292D] px-3 py-2 rounded-full">{mood}</div>
               <textarea
                 rows={3}
-                value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                value={post}
                 className="text-[#7F8084] w-full text-[16px] bg-[#191920] border-none outline-none"
               />
             </div>

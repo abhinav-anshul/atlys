@@ -1,4 +1,14 @@
 import { CreatePost, Posts, Spacer } from "../ui"
+import { USER_DETAIL } from "../constants/userdetails"
+import { Fragment } from "react/jsx-runtime"
+
+interface IDetail {
+  id: number
+  name: string
+  timeStamp: string
+  mood: string
+  post: string
+}
 
 function Dashboard() {
   return (
@@ -11,8 +21,18 @@ function Dashboard() {
       <div>
         <CreatePost />
       </div>
-      <div>
-        <Posts />
+      <div className="space-y-2">
+        {USER_DETAIL?.map((itm: IDetail, index: number) => (
+          <Fragment key={index}>
+            <Posts
+              id={itm?.id}
+              name={itm?.name}
+              timeStamp={itm?.timeStamp}
+              mood={itm?.mood}
+              post={itm?.post}
+            />
+          </Fragment>
+        ))}
       </div>
     </main>
   )
