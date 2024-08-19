@@ -64,7 +64,7 @@ function Posts({ id, name, timeStamp, mood, post, profile_picture, comments_numb
           </div>
         </div>
         <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
-          <ModalForm modalType="login" />
+          <ModalForm modalType="login" setIsOpen={setIsOpen} />
         </Modal>
       </section>
     </>

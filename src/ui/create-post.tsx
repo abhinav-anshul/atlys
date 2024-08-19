@@ -32,7 +32,7 @@ function CreatePost() {
           </div>
         </div>
         <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
-          <ModalForm modalType="signup" />
+          <ModalForm modalType="signup" setIsOpen={setIsOpen} />
         </Modal>
       </main>
     </>
