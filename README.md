@@ -6,6 +6,10 @@ This is an Atlys assignment.
 <br />
 **External Dependencies** - I have kept the dependency to minimum as mentioned in the document, therefore it uses only 3 `external dependencies` - react, react-dom, wouter, the rest are `dev dependencies`
 
+## Complete Walkthrough - please follow the video
+
+
+
 ## Decisons Taken
 - Vite : Small library with efficient bundling, better in terms of performance when compared to webpack/create-react-app.
 - TypeScript : Goes well with modern-day JS development, good for catching errors even for smaller projects.
@@ -19,7 +23,7 @@ This is an Atlys assignment.
     - `/login` : This will render the page with `login` component.
     - `/signup` : This will render the page with `signup` component.
 
-- There are 2 `Modals` for signup and login. Since not a proper was provided in the Figma, I have triggered the Modal as follows 
+- There are 2 `Modals` for signup and login. Since not a proper flow was provided in the Figma, I have triggered the Modal as follows 
     - Login Modal - It will be triggered whenever you click on the 'comments' from any post
 https://github.com/user-attachments/assets/61cd235e-fad5-45ad-93ee-b0287813fbfb
     - Signup Modal - Similarly, it will be triggered when you click on 'Post' button
