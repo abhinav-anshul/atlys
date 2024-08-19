@@ -8,6 +8,10 @@ This is an Atlys assignment.
 
 ## Complete Walkthrough - please follow the video
 
+Uploading Screen Recording 2024-08-19 at 5.36.33 PM.mov…
+
+
+
 
 
 ## Decisons Taken
@@ -25,9 +29,12 @@ This is an Atlys assignment.
 
 - There are 2 `Modals` for signup and login. Since not a proper flow was provided in the Figma, I have triggered the Modal as follows 
     - Login Modal - It will be triggered whenever you click on the 'comments' from any post
-https://github.com/user-attachments/assets/61cd235e-fad5-45ad-93ee-b0287813fbfb
     - Signup Modal - Similarly, it will be triggered when you click on 'Post' button
-https://github.com/user-attachments/assets/8015a8ab-3b15-4fe3-9177-1afa304d8b6b
+
+## Quirks
+- I tried hosting it on vercel and on Netlify, but the slugs doesnt work, it likely a bug or I have exhaused my free tier. 
+  - https://atlys-project.vercel.app/ - works
+  - https://atlys-project.vercel.app/dashboard - or such slug throws an error, likely due to free tier account, same with Netlify
 
 
 
